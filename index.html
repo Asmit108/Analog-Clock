@@ -1,21 +1,31 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html lang="en">
  <head>
  	 <meta charset="UTF-8">
  	 <meta name="viewport" content="width=device-width,initial-scale=1.0">
  	 <title>Analog Clock </title>
  	 <link rel="stylesheet" href="index.css">
- 	 <script src="index.js"></script>
  </head>
  <body>
+	<h1 id="top">Analog Clock</h1>
+	<h3 id="h"> </h2>
      <div id="clockContainer">
      	<div id="hour"></div>
      	<div id="minute"></div>
      	<div id="second"></div>
      </div>
-  <form action='#'>
-   <span>Select alarm time</span>
-   <input type="submit">
-  </form>
+    
+	 <form action="#" method="get" id="frm">
+		<h3>Select alarm time: </h3>
+		<input type="datetime-local" name="ip" id="ip"> 
+		<input type="submit" name="sb" id="sb">
+	</form>
+	<form action="#" method="get" id="sfrm">
+		<h3>Select time: </h3>
+		<input type="datetime-local" name="sip" id="sip"> 
+		<input type="submit" name="ssb" id="ssb">
+	</form>
+
+	<script src="index.js"></script>
  </body>
  </html>	 
