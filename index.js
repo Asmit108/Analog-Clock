@@ -53,7 +53,7 @@ sfrm.addEventListener('submit',(e)=>{   /*for setting count-down-timer*/
               const dfs=(dif%60);
               const divtmr=document.querySelector('.divtmr');
               divtimer.innerText=`COUNT-DOWN-TIMER:     ${dfh} : ${dfm} : ${dfs}`;
-              if(timr==cur_time){divtmr.remove();clearInterval(a);alert('Timer Completed!');}
+              if(time==cur_time){divtmr.remove();clearInterval(a);alert('Timer Completed!');}
           },1000);
     }
     else{
