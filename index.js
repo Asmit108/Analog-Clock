@@ -10,13 +10,13 @@ setInterval(() => {
     hour.style.transform = `rotate(${hrotation}deg)`;
     minute.style.transform = `rotate(${mrotation}deg)`;
     second.style.transform = `rotate(${srotation}deg)`;
-}, 1000);    
+}, 1000);    /*for showing time in clock*/
 
 var audio=new Audio('Message.mp3');
 const frm=document.querySelector('#frm');
 const ip=document.querySelector('#ip');
 
-frm.addEventListener('submit',(e)=>{
+frm.addEventListener('submit',(e)=>{    /*for alarm tone ringing*/
    e.preventDefault();
    const alarm_time=new Date(ip.value);
    const cur_time=new Date();
@@ -37,7 +37,7 @@ const sfrm=document.querySelector('#sfrm');
 const sip=document.querySelector('#sip');
 const h=document.querySelector('#h');
 
-sfrm.addEventListener('submit',(e)=>{
+sfrm.addEventListener('submit',(e)=>{   /*for setting count-down-timer*/
     e.preventDefault();
     const time=new Date(sip.value);
     const cur_time=new Date();
